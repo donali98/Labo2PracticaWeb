@@ -10,31 +10,73 @@
     <header>
         <h1>Curriculum Vitae</h1>
     </header>
-    <fieldset>
-        <legend>Personal Data</legend>
-        <label for="dui">Dui</label>
-        <input type="number" name="dui" id="dui" pattern="[0-9]{9}" placeholder="048134128">
-        <label for="firstName">First Name</label>
-        <input type="text" name="firstName" placeholder="First Name">   
-        <label for="lastName">Last Name</label>
-        <input type="text" name="lastName" placeholder="Last Name">
-        <label for="gender">Genero</label>
-        <input type="radio" name="gender"> M
-        <input type="radio" name="gender">  F
-        <br>
-        <br>
-        <label for="cnumber">Contact Number</label>
-        <input type="number" name="cnumber" patter="[0-9]{8}">
-        <label for="birthDate">Birth Date</label>
-        <input type="date" name="birthDate">
-        <label for="civilStatus">Civil Status</label>
-        <select name="select" id="select">
-            Civil Status
-            <option value="single">Single</option>
-            <option value="married">Married</option>
-        </select> 
-        <label for="image">Image</label>
-        <input type="file" name="image" accept="image/*">
-    </fieldset>      
+   <form action="#" method="post">
+        <fieldset>
+                <legend>Personal Data</legend>
+                <label for="dui">Dui</label>
+                <input type="tel" name="dui" id="dui" pattern="[0-9]{8}-[0-9]{1}"  placeholder="04813412-8" required>
+                
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" placeholder="First Name"required>   
+            
+                <label for="lastName">Last Name</label>    
+                <input type="text" name="lastName" placeholder="Last Name" required>
+               
+                <label for="gender">Genero</label>
+                <input type="radio" name="gender" value="m" checked > M
+                <input type="radio" name="gender" value="g">  F
+                <br>
+                <br>
+                <label for="cnumber">Contact Number</label>
+                <input type="tel" name="cnumber" patter="[0-9]{8}"required>
+
+                <label for="birthDate">Birth Date</label>
+                <input type="date" name="birthDate"required>
+                
+                <label for="civilStatus">Civil Status</label>
+                <select name="select" id="select">
+                    Civil Status
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                </select> 
+                <label for="image">Image</label>
+                <input type="file" name="image" accept="image/*" required>
+            </fieldset> 
+            <br><br>
+            <fieldset>
+                <legend>Work Experience</legend>
+                <textarea name="workexperience" id="workexperience" cols="160" rows="7" placeholder="Experience"></textarea>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>Academic Training</legend>
+                <textarea name="atraining" id="atraining" cols="160" rows="7" placeholder="Academic Training"></textarea>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <br>
+                <legend>Further Training</legend>
+                    <fieldset>
+                        <legend>Programming Languages</legend>
+                        <input type="checkbox"value="java">Java
+                        <input type="checkbox"value="csharp">C#
+                        <input type="checkbox"value="py">Python
+                        <input type="checkbox"value="cpp">C++
+                        <input type="checkbox"value="ruby">Ruby
+                    </fieldset>
+                    <br><br>
+                    <fieldset>
+                        <legend>Web Tecnologies</legend>
+                        <input type="checkbox">HTML5
+                        <input type="checkbox">CSS/CSS3
+                        <input type="checkbox">Materialize Css
+                        <input type="checkbox">Javascript
+                        <input type="checkbox">Node.js
+                        <input type="checkbox">Spring MVC
+                    </fieldset>
+            </fieldset>
+            <button type="submit">Send</button>
+            <button>Cancel</button>     
+   </form>
 </body>
 </html>
