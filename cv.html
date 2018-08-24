@@ -28,7 +28,7 @@
                 <br>
                 <br>
                 <label for="cnumber">Contact Number</label>
-                <input type="tel" name="cnumber" patter="[0-9]{8}"required>
+                <input type="tel" name="cnumber" pattern="[0-9]{4}-[0-9]{4}" placeholder="1234-5678" required>
 
                 <label for="birthDate">Birth Date</label>
                 <input type="date" name="birthDate"required>
@@ -39,18 +39,20 @@
                     <option value="single">Single</option>
                     <option value="married">Married</option>
                 </select> 
+
                 <label for="image">Image</label>
                 <input type="file" name="image" accept="image/*" required>
+
             </fieldset> 
             <br><br>
             <fieldset>
                 <legend>Work Experience</legend>
-                <textarea name="workexperience" id="workexperience" cols="160" rows="7" placeholder="Experience"></textarea>
+                <textarea name="workexperience" id="workexperience" cols="160" rows="7" placeholder="Experience" required></textarea>
             </fieldset>
             <br><br>
             <fieldset>
                 <legend>Academic Training</legend>
-                <textarea name="atraining" id="atraining" cols="160" rows="7" placeholder="Academic Training"></textarea>
+                <textarea name="atraining" id="atraining" cols="160" rows="7" placeholder="Academic Training" required></textarea>
             </fieldset>
             <br><br>
             <fieldset>
